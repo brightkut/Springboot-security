@@ -38,6 +38,8 @@ public class JWTAuthenticationProcessingFilter extends AbstractAuthenticationPro
     }
 
 
+
+
     @Override
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {
         TokenAuthenticationService.addAuthentication(response, authResult.getName());

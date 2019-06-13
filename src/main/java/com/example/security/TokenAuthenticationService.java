@@ -17,7 +17,7 @@ import java.util.Date;
 
 public class TokenAuthenticationService {
 
-    static final long EXPIRATION_TIME = 1000 * 30; // 30 seconds timeout
+    static final long EXPIRATION_TIME = 1000 * 10000; // 30 seconds timeout
     static final String HEADER_STRING = "Authorization";
     static final String TOKEN_PREFIX = "Bearer";
     static final Key SECRET_KEY = Keys.secretKeyFor(SignatureAlgorithm.HS512);
